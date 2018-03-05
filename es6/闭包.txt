@@ -1,0 +1,47 @@
+
+闭包
+
+在一个函数中嵌套另一个函数
+
+闭包中返回的函数不会立即执行，而是等调用了这个闭包时，才执行。
+
+function count (){
+ var arr = [];
+ 
+ for(var i=1;i<=3;i++){
+ 
+    arr.push(function(){
+   
+      return i*i;
+   
+   })；
+   
+ }
+  return arr；
+
+}
+
+   var result = count();
+  
+   console.log(result[0]); //16
+   console.log(result[1]); //16
+   console.log(result[2]); //16  
+   
+   
+   function count(){
+   
+    var arr = [];
+	
+	for (var i=1;i<=3;i++){
+	
+	 arr.push((function(n){
+	  
+	   return n*n;
+	 
+	   }
+	    ))(i) 
+	  )
+	
+	}
+    return arr;
+   }

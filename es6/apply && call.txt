@@ -1,0 +1,21 @@
+
+一 apply() 和 call()
+
+   apply() 接受的是一argument；
+   
+   eg:
+   var xiaoMing = {
+      name : '小明',
+	  born ：1990,
+	  age:getAge
+   }
+   
+   getAge function(){
+     var y = new Data().getFullYear();
+	 return y - this.born;
+   
+   }
+   xiaoming.age()//26
+   getAge.apply(xiaoming,[]);//26
+   
+  call() 接受的是一个个的参数；

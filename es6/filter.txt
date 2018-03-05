@@ -1,0 +1,31 @@
+
+一、filter()
+
+    高阶函数,接受一个函数，作用于数组中的每一项， 将返回值为true的项以数组的形式返回。
+	
+	eg：过滤出质数
+	
+	function get_prime(arr){
+	
+	arr.filter(n){function(){
+	
+	   if(n == 1){
+	   return false;
+	   }
+	 
+	   for(var i=2;i<(n+1)/2;i++){
+	   
+	    if(n%i == 0){
+		
+		  return false;
+		
+		}
+		
+		return true;
+		
+	   }
+	
+	}};
+	
+	}
+	

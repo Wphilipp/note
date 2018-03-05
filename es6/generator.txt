@@ -1,0 +1,25 @@
+
+ generator
+
+ 是一个类似函数的数据结构，可以用yield返回多次
+  
+ 表示方法为
+  
+  function* foo(x){
+    yield x + 1;
+	yield x + 2;
+	return x + 3;
+  }
+  
+   yield 返回的是一个generator对象 [value,done:true/false] ；
+    
+   遍历generator对象有两种方法：
+   
+   1、next()
+    
+   2、 for of
+       for (var x of foo(2)){
+	     console.log(x);
+	   }
+ 
+ 

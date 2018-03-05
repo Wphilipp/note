@@ -1,0 +1,23 @@
+
+Date对象
+
+创建方法：
+
+var a = new Date();
+
+a.getFUllYear;
+a.getMonth();
+a.getDate();获取日期，多少号；
+a.getDay()；获取当前是周几；
+a.getHours();获取当前时 24小时制；
+a.getMinutes();获取当前分；
+a.getSeconds();获取当前秒；
+a.getMilliSeconds();获取当前毫秒
+a.getTimes();获取时间戳；
+
+创建一个指定的日期
+1、var d = getDate(2016,11,22,23,05,122);
+2、var d = Date.parse('2016-11-22T23:12:45')
+
+JavaScript中的月份是从0开始算起的
+

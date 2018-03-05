@@ -1,0 +1,58 @@
+ 
+   Map和Set是 ES6新创建的数据类型 
+一、Map
+     
+      是一种键值对的结构，具有快速查找速度
+	         创建方式： 1、初始化一个二维数组  var m = new Map([[],[],[],]);
+	                    2、赋空值    var m = new Map();
+	  
+	  Map()方法：1  m.set(['zerk':'fonter']);
+	             2、m.get('zerk');
+				 3、m.has('');
+				 4、m.delete('');
+		       		 
+                 Map()的key值只能对应一个value值，如果多次赋值，后面值的会取代前面的
+
+二、Set		
+      与Map类似也是一组key的集合，但不存储value，而且key值不能重复。		 
+		     创建方式: 1、初始化一个一维数组：var s = new set(['zerk']);
+			           2、赋空值 var s = set()；
+            
+		   	set()方法: 1、s.add();
+			           2、s.delete();
+	             重复元素在set中会被过滤	
+
+三、iterable类型  ES6新增的类型，包括 Array Set Map;
+ 
+    iterable类型的的集合都可以用 for....of来遍历
+	         var arr=[];
+			 var m = new Map();
+			 var s = new Set();
+			 
+			 for(var x of arr){alert(x)};
+			 for(var x 0f s){alert(x)};
+			 for(var x of m){alert(x[0] + '=' + x[1])};
+			 
+    for..in不能遍历对象自身部分属性如length，for...of可以遍历对象所有属性
+    
+    iterable类型的方法forEach();接受一个函数，每次迭代就会回调该函数。//forEach是ES5.1引入的 	
+	        
+			var arr = [];
+			arr.forEach(function(element,index,array){
+			  //element指向当前元素值
+			  //index指向当前索引值
+			  //array指向当前Array对象本身
+			 alert(element);
+			})
+			
+			var s = new Set([1,2,3,4]);
+			s.forEach(function(element,element,set){
+			   alert(element);
+			   //set 没有索引值，所以第一第二参数相同
+			})
+			
+			var m = new Map([[1,2],[1,2],[1,2]]);
+			m.forEach(function(value,key,map){
+			    alert(value);
+			})
+			
