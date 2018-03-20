@@ -32,7 +32,9 @@
 2、Cache-Control各指令适用情况如下：
 ![51](https://user-images.githubusercontent.com/17128499/36641390-e54e25e8-1a69-11e8-9269-1d45f78cc414.png)
 
-参考：
+#### 参考：
 [1、饿了么知乎专栏](https://zhuanlan.zhihu.com/p/29750583?group_id=901822939576557568)
+
 [2、腾讯Bugly知乎专栏](https://zhuanlan.zhihu.com/p/24467558)
+
 [3、AlloyTeam博客 浅谈http缓存](http://www.alloyteam.com/2016/03/discussion-on-web-caching/#prettyPhoto)

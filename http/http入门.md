@@ -47,13 +47,13 @@ eg:
 
 > 200 OK                        //客户端请求成功
 400 Bad Request               //客户端请求有语法错误，不能被服务器所理解
-401 Unauthorized              //请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用 
+401 Unauthorized              //请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用
 403 Forbidden                 //服务器收到请求，但是拒绝提供服务
 404 Not Found                 //请求资源不存在，eg：输入了错误的URL
 500 Internal Server Error     //服务器发生不可预期的错误
 503 Server Unavailable        //服务器当前不能处理客户端的请求，一段时间后可能恢复正常
 
-> 
+>
 
 ##### 3、响应头
 1）、Content-Type: 服务端传过来的数据格式
@@ -144,5 +144,7 @@ http2允许服务器未经请求，主动向客户端发送资源。
 
 #### 参考：
 [1、阮一峰http入门]( http://www.ruanyifeng.com/blog/2016/08/http.html)
+
 [2、关于http协议这一篇就够了](https://www.jianshu.com/p/80e25cb1d81a)
+
 [3、http知识积累及相关实践](http://www.notedeep.com/note/36)
